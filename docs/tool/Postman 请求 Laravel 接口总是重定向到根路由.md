@@ -16,7 +16,6 @@ tags:
   - Laravel
   - Postman
   - Api
-  - Tips
 
 ---
 
