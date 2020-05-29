@@ -18,7 +18,7 @@
 
 1. 下载：`git clone https://github.com/ioim/vuepress-theme-yur-tool.git`
 2. 删除 `.git` 目录
-3. 安装：`npm i`
+3. 安装：`npm install`
 4. 本地预览：`npm run start`
 5. 编译：`npm run build`
 
@@ -28,8 +28,8 @@
 
 ## 教程
 
-- [从零开始搭建 VuePress 静态博客](https://gleehub.com/other/cong-ling-kai-shi-da-jian-vuepress-jing-tai-bo-ke.html)
-- [vuepress-theme-yur 使用教程](https://imwiki.cn/zh/theme/vuepress-theme-yur.html)
+- [从零开始搭建 VuePress 静态博客](https://blog.cnguu.cn/other/cong-ling-kai-shi-da-jian-vuepress-jing-tai-bo-ke.html)
+- [vuepress-theme-yur 使用教程](https://imwiki.cn/zh/theme/vuepress-theme-yur@2.x.html)
 
 ## 协议
 

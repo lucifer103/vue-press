@@ -66,7 +66,7 @@ module.exports = {
     ],
     //落下帷幕
     curtain: {
-        tip: '页面准备中...',
+        tip: '♥ 大官人，请稍等片刻，第一次奴家还没准备好 ♥',
         textShadow: '#e91e63'
     },
 

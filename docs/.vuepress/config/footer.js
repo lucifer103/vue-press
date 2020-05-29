@@ -8,11 +8,6 @@ module.exports = {
             link: 'https://github.com/cnguu/vuepress-theme-yur'
         },
         {
-            title: 'Yur Tool',
-            subtitle: '主题快速搭建工具',
-            link: 'https://github.com/ioim/vuepress-theme-yur-tool'
-        },
-        {
             title: 'Wiki',
             subtitle: '主题使用文档',
             link: 'https://imwiki.cn/'
@@ -36,6 +31,12 @@ module.exports = {
             title: '兔小巢',
             link: 'https://support.qq.com/products/140331',
             type: 'message',
+            theme: 'outlined'
+        },
+        {
+            title: '神域之上',
+            link: 'https://fiora.learnku.fit/',
+            type: 'fiora',
             theme: 'outlined'
         },
         {
