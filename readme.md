@@ -24,11 +24,11 @@
 
 ### 部署
 
-需要修改`deploy.php`脚本
+需要修改`deploy.sh`脚本
 
 ## 教程
 
-- [从零开始搭建 VuePress 静态博客](https://blog.cnguu.cn/other/cong-ling-kai-shi-da-jian-vuepress-jing-tai-bo-ke.html)
+- [从零开始搭建 VuePress 静态博客](https://blog.cnguu.cn/other/cong-ling-kai-shi-da-jianvuepress-jing-tai-bo-ke.html)
 - [vuepress-theme-yur 使用教程](https://imwiki.cn/zh/theme/vuepress-theme-yur@2.x.html)
 
 ## 协议

@@ -10,7 +10,7 @@ meta:
 
 created: 2019/11/09
 
-updated: 2020/04/02
+updated: 2020/05/31
 
 tags:
   - MarkDown
@@ -64,7 +64,7 @@ tags:
 
 ## 链接
 
-[GitHub](https://github.com/lucifer103/vue-press)
+[GitHub](https://github.com/lucifer103/vuepress)
 
 ## 表格
 

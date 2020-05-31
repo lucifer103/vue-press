@@ -10,7 +10,7 @@ meta:
 
 created: 2020-05-04
 
-updated: 2020-05-04
+updated: 2020-05-31
 
 tags:
   - Database
@@ -29,11 +29,13 @@ tags:
 ### 安装
 
 1. `Setup Type` 选择 `Custom`；
+
 2. 安装过程中取消 `Install MongoDB Compass` （图形管理工具）勾选。
 
 ### 配置
 
 1. 在安装目录下的 `log` 目录下新建 `mongo.log` 文件；
+
 2. 在安装目录下新建 `mongo.conf` 文件，并写入以下内容：
 ``` conf
 # 数据库路径
@@ -50,13 +52,17 @@ quiet=true
 port=27017
 ```
 3. 启动 `MongoDB`：`cd bin && mongod --config "{MongoDB_Path}\mongo.conf"`；
+
 4. 校验服务是否正常启动，打开浏览器输入 `127.0.0.1:27017`，可以访问成功且输出信息合理的话，即为启动成功；
+
 5. 将 `MongoDB` 安装为服务来管理：`cd bin && mongod --config "{MongoDB_Path}\mongo.conf"  --install --serviceName "{Service_Name}"`。
 
 ### 命令
 
 * 启动服务：`net start {Service_Name}`；
+
 * 关闭服务：`net stop {Service_Name}`；
+
 * 移除服务：`mongod --remove --serviceName "{Service_Name}"`。
 
 ## Linux
