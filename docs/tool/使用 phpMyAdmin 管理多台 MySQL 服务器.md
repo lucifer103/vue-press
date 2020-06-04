@@ -6,7 +6,7 @@ meta:
   - name: description
     content: 使用 phpMyAdmin 管理多台 MySQL 服务器
   - name: keywords
-    content: 使用 phpMyAdmin 管理多台 MySQL 服务器
+    content: phpMyAdmin,MySQL
 
 created: 2020/04/04
 
