@@ -50,7 +50,7 @@ export default {
   import util from '@/utils/util'
   export default {
     name: 'Util',
-    mounted(){
+    mounted () {
       util.LoadRes('https://foo.bar/demo.js').then(() => {
         // TODO
       })
