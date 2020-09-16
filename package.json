@@ -23,5 +23,8 @@
     "markdown-it-task-checkbox": "^1.0.6",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-theme-yur": "2.2.2"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.4"
   }
 }
