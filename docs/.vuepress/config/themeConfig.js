@@ -1,101 +1,63 @@
-const links = require('./links.js');
-const social = require('./social');
-const footer = require('./footer');
-const ityped = require('./ityped');
-const nameplate = require('./nameplate');
+const links = require("./links.js"); // 引入友链配置
+const nameplate = require("./nameplate"); // 引入标示牌配置
 
 module.exports = {
-    lang: 'zh-CN',
-    // logo: '/logo48.png',
-    author: 'Lucifer',
-    authorLink: 'https://github.com/lucifer103/',
-    //封面图
-    // banner: '/banner.png',
-    locales: {
-        title: '星汉灿烂',
-        description: '书写生活与你'
-    },
-    navs: [
-        {text: '编程技术', link: '/programe/'},
-        {text: '生活兴趣', link: '/life/'},
-        {text: '软件工具', link: '/tool/'},
-        {text: '其他', link: '/other/'}
-    ],
-    //按钮组
-    buttons: [
-        {text: '阅读列表', link: '/posts/', type: 'primary'},
-        {text: '了解作者', link: '/about.html', type: 'default'}
-    ],
-    timeline: true,
-    links,
-    about: true,
-    avatar: 'https://cdn.learnku.com/uploads/avatars/25461_1585757311.jpg!/both/400x400',
-    //添加社交
-    social,
-    //页脚
-    footer,
-    //打字特效
-    ityped,
-    //标签数量
-    tagSize: 100, // 默认：100
-    //标示牌
-    nameplate,
-    //随机封面
-    post: {
-        // cover: [
-        //     '/post/1.jpg',
-        //     '/post/2.jpg',
-        //     'https://xxx.com/3.jpg',
-        //     'https://xxx.com/4.jpg'
-        // ],
-        //分页
-        pageSize: 12,
-        pageSizeOptions: ['12', '24', '48', '96'],
-        //气泡特效
-        bubbles: {
-            color: 'random',
-            radius: 15,
-            density: 0.3,
-            clearOffset: 0.2
-        }
-    },
-    //打赏
-    reward: [
-        'https://static.xmt.cn/ca717dde8ae14ea7ab3c8c74b8711414.png',
-        'https://static.xmt.cn/acc7d3d02b0c4a35a3735268cbb2cce0.png'
-    ],
-    //落下帷幕
-    curtain: {
-        tip: '♥ 大官人，请稍等片刻，第一次奴家还没准备好 ♥',
-        textShadow: '#e91e63'
-    },
-
-    //客服聊天
-    crisp: 'ee7d1688-7078-46a7-996f-0cb6dc843ff1',
-
-    //添加评论
-    discuss: 'valine',
-    valine: {
-        appId: 'i0HYGMS03yNK2zeHMfbcMFJC-gzGzoHsz',
-        appKey: '3SGJ8fQAYvomJeeToq41Ur11',
-        placeholder: '在这里写下你的留言丨支持 MarkDown 语法',
-        notify: false,
-        verify: false,
-        avatar: '',
-        pageSize: 8,
-        recordIP: true,
-        lang: 'zh-cn'
-    },
-
-    //百度统计
-    baiDu: {
-        tongJi: 'https://hm.baidu.com/hm.js?tongJi',
-        autoPush: true,
-        pinYin: true
-    },
-    //夜间模式
-    dark: true,
-    password: 'Aa@123321',
-    //cdn
-    //cdn: 'https://cdn.jsdelivr.net/gh/cnguu/cnguu.github.io@master/'
-}
+  // 当前网站语言 en zh-CN
+  lang: "zh-CN",
+  // 网站 logo
+  logo: "/logo.png",
+  // 标示牌
+  nameplate,
+  // 文章随机封面
+  postCover: [
+    "https://qiniuyun.learnku.fit/1039d85f155ebe572ff56f90a626b7a1.jpg",
+    "https://qiniuyun.learnku.fit/259d10ede304468d1c12df2f49ed2afd.jpg",
+    "https://qiniuyun.learnku.fit/56e0e59e0ab812163e669e6ed52f7fa3.jpg",
+    "https://qiniuyun.learnku.fit/6f6ca5b0cb3bc43e5895911cc40a343d.jpg",
+    "https://qiniuyun.learnku.fit/766bb99cdfea168a5611d5ed3ee87e6a.jpg",
+    "https://qiniuyun.learnku.fit/abea283e65f3460e6f33383dceec550b.jpg",
+    "https://qiniuyun.learnku.fit/b49fa49c69ff125aff9a08b177f94cec.jpg",
+    "https://qiniuyun.learnku.fit/bae275e9f50a46e61498e227df586eb9.jpg",
+    "https://qiniuyun.learnku.fit/bc8cd22dd19d42b85dfa8abc871215bf.jpg",
+    "https://qiniuyun.learnku.fit/d4650c2a40868b84eda513bca9d13513.jpg",
+    "https://qiniuyun.learnku.fit/eb92164f38952ef26315499f112b963a.jpg",
+    "https://qiniuyun.learnku.fit/fb03a35ac8a7ca43a69b89c298b2165a.jpg",
+  ],
+  //打赏图片
+  reward: [
+    "https://qiniuyun.learnku.fit/%E5%BE%AE%E4%BF%A1%E8%B5%9E%E8%B5%8F%E7%A0%81.png",
+    "https://qiniuyun.learnku.fit/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.png",
+  ],
+  // 开启友链的页面
+  links,
+  // 开启关于我的页面
+  about: true,
+  //cdn
+  //cdn: 'https://qiniuyun.learnku.fit'
+  // 页脚备案信息
+  beiAn: "晋 ICP 备 20002124 号",
+  // 生成 sitemap
+  hostname: "https://learnku.fit",
+  // 语言本地化，详情见：https://cdn.jsdelivr.net/gh/cnguu/vuepress-theme-yur@master/yur/plugins/Translation/locales/zh-CN.js
+  locales: {
+    title: "月上陌阡",
+    description: "责难无以成事",
+  },
+  // 分类配置
+  menuCategories: [
+    { text: "编程技术", link: "programe" },
+    { text: "生活兴趣", link: "life" },
+    { text: "软件工具", link: "tool" },
+    { text: "其他", link: "other" },
+  ],
+  //百度统计
+  baiDu: {
+    tongJi: "https://hm.baidu.com/hm.js?tongJi",
+    autoPush: true,
+    pinYin: true,
+  },
+  //客服在线聊天
+  crisp: "c19c39c9-c33a-43cc-ba56-d09aa1ea2b1a",
+  //封面图
+  // banner: '/banner.png',
+};

@@ -7,9 +7,9 @@ meta:
   - name: keywords
     content: SQLite
 
-created: 2020-11-19
+created: 2020/11/19
 
-updated: 2020-11-19
+updated: 2020/11/19
 
 tags:
   - SQLite

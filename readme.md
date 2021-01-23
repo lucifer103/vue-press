@@ -28,9 +28,9 @@
 
 ## 教程
 
-- [从零开始搭建 VuePress 静态博客](https://blog.cnguu.cn/other/cong-ling-kai-shi-da-jianvuepress-jing-tai-bo-ke.html)
-- [vuepress-theme-yur 使用教程](https://imwiki.cn/zh/theme/vuepress-theme-yur@2.x.html)
+- [从零开始搭建 VuePress 静态博客](https://blog.cnguu.cn/other/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAVuePress%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2.html)
+- [vuepress-theme-yur 使用教程](https://wiki.cnguu.cn/zh/theme/vuepress-theme-yur@3.x.html)
 
 ## 协议
 
-[MIT](./LICENSE)
+[MIT](https://opensource.org/licenses/MIT)

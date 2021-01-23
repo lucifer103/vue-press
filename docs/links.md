@@ -1,14 +1,15 @@
 ---
 
+layout: Links
+
 title: 友人帐
 
 meta:
-  - name: description
-    content: 友人帐
-  - name: keywords
-    content: 友人帐
 
----
+- name: description
+  content: 友人帐
+- name: keywords
+  content: 友人帐
 
 ---
 
@@ -19,7 +20,7 @@ meta:
 
 站点描述：刻意练习，日益精进
 
-站点网址：https://www.learnku.fit/
+站点网址：https://learnku.fit/
 
 LOGO：https://cdn.learnku.com/uploads/avatars/25461_1585757311.jpg!/both/400x400
 
