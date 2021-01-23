@@ -13,5 +13,4 @@ module.exports = {
   markdown,
   host: "localhost", // 开发模式下，访问域名
   port: 8080, // 开发模式下，访问端口
-  dest: "public", // 打包输出目录
 };
