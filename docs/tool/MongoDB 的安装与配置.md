@@ -1,5 +1,4 @@
 ---
-
 title: MongoDB 的安装与配置
 
 meta:
@@ -8,17 +7,14 @@ meta:
   - name: keywords
     content: MongoDB
 
-created: 2020-05-04
+created: 2020/05/04
 
-updated: 2020-05-31
+updated: 2020/05/31
 
 tags:
   - Database
   - MongoDB
-
 ---
-
-# MongoDB 的安装与配置
 
 ## 下载
 
@@ -37,7 +33,8 @@ tags:
 1. 在安装目录下的 `log` 目录下新建 `mongo.log` 文件；
 
 2. 在安装目录下新建 `mongo.conf` 文件，并写入以下内容：
-``` conf
+
+```conf
 # 数据库路径
 dbpath={MongoDB_Path}\data
 # 日志输出文件路径
@@ -51,19 +48,20 @@ quiet=true
 # 端口号默认为 27017
 port=27017
 ```
+
 3. 启动 `MongoDB`：`cd bin && mongod --config "{MongoDB_Path}\mongo.conf"`；
 
 4. 校验服务是否正常启动，打开浏览器输入 `127.0.0.1:27017`，可以访问成功且输出信息合理的话，即为启动成功；
 
-5. 将 `MongoDB` 安装为服务来管理：`cd bin && mongod --config "{MongoDB_Path}\mongo.conf"  --install --serviceName "{Service_Name}"`。
+5. 将 `MongoDB` 安装为服务来管理：`cd bin && mongod --config "{MongoDB_Path}\mongo.conf" --install --serviceName "{Service_Name}"`。
 
 ### 命令
 
-* 启动服务：`net start {Service_Name}`；
+- 启动服务：`net start {Service_Name}`；
 
-* 关闭服务：`net stop {Service_Name}`；
+- 关闭服务：`net stop {Service_Name}`；
 
-* 移除服务：`mongod --remove --serviceName "{Service_Name}"`。
+- 移除服务：`mongod --remove --serviceName "{Service_Name}"`。
 
 ## Linux
 

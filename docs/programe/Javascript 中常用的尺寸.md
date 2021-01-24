@@ -1,5 +1,4 @@
 ---
-
 title: Javascript 中常用的尺寸
 
 meta:
@@ -8,16 +7,13 @@ meta:
   - name: keywords
     content: Javascript，尺寸
 
-created: 2020-04-04
+created: 2020/04/04
 
-updated: 2020-05-31
+updated: 2020/05/31
 
 tags:
   - Javascript
-
 ---
-
-# Javascript 中常用的尺寸
 
 1. 网页可见区域宽：`document.body.clientWidth`；
 

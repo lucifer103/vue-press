@@ -1,5 +1,4 @@
 ---
-
 title: 使用 phpMyAdmin 管理多台 MySQL 服务器
 
 meta:
@@ -14,10 +13,7 @@ updated: 2020/05/31
 
 tags:
   - Mysql
-
 ---
-
-# 使用 phpMyAdmin 管理多台 MySQL 服务器
 
 ## 前言
 
@@ -30,13 +26,16 @@ tags:
 :::
 
 #### 缺点
+
 登陆操作比较繁琐，而且切换服务器时须先退出当前所登陆的服务器。
 
 #### 步骤
+
 1. 复制 `phpMyAdmin` 根目录下的 `config.sample.inc.php` 文件，重命名为 `config.inc.php`；
 
 2. 将 `$cfg['AllowArbitraryServer']` 的默认值 `false` 修改为 `true` 即可实现管理多台 `MySQL` 服务器;
-```  php
+
+```php
 /**
  * allow login to any user entered server in cookie based authentication
  *
@@ -53,14 +52,16 @@ $cfg['AllowArbitraryServer'] = true;
 :::
 
 #### 优点
+
 登陆操作简便，登陆后切换服务器无须退出当前连接。
 
 #### 步骤
+
 1. 复制 `phpMyAdmin` 根目录下的 `config.sample.inc.php` 文件，重命名为 `config.inc.php`；
 
 2. 在文件中定义你的多台服务器配置信息：
 
-``` php
+```php
 $hosts = [
     1 => ['host' => 'localhost', 'user' => 'root', 'password' => 'root'],
     2 => ['host' => '192.168.10.10', 'user' => 'homestead', 'password' => 'secret']
@@ -69,7 +70,7 @@ $hosts = [
 
 3. 在加入以下代码片段，通过 `for` 循环来读取多台 `MySQL` 服务器配置信息
 
-``` php
+```php
 for($i = 1; $i <= count($hosts); $i++){
     /* Authentication type */
     $cfg['Servers'][$i]['auth_type'] = 'cookie';
